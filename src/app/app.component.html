@@ -1,0 +1,44 @@
+<div class="container">
+  <form [formGroup]="addPersonnelForm">
+    <div class="first-container">
+      <select
+        size="5"
+        id="addSelect"
+        class="form-control form-field"
+        formControlName="addSelect"
+      >
+        <option *ngFor="let name of entityUsers" type="number" [ngValue]="name">
+          {{ name.ItemName }}
+        </option>
+      </select>
+    </div>
+  </form>
+  <div class="action-container">
+    <div>
+      <button [disabled]="addPersonnelForm.invalid" (click)="addUser()">
+        Add
+      </button>
+    </div>
+    <div><button>Add All</button></div>
+    <div>
+      <button [disabled]="removePersonnelForm.invalid" (click)="removeUser()">
+        Remove
+      </button>
+    </div>
+    <div><button>Remove All</button></div>
+  </div>
+  <form [formGroup]="removePersonnelForm">
+    <div class="second-container">
+      <select
+        size="5"
+        id="removeSelect"
+        class="form-control form-field"
+        formControlName="removeSelect"
+      >
+        <option *ngFor="let name of userGroups" type="number" [ngValue]="name">
+          {{ name.ItemName }}
+        </option>
+      </select>
+    </div>
+  </form>
+</div>

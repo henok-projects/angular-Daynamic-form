@@ -1,0 +1,33 @@
+p {
+  font-family: Lato;
+}
+
+.form-field {
+  width: 80px;
+  height: 100px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.container {
+  display: inline-flex;
+  margin-top: 20px;
+}
+.first-container {
+  margin-left: 20px;
+}
+
+.second-container {
+  margin-left: 10px;
+}
+
+.action-container {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+button {
+  width: 90px;
+  height: 22px;
+  margin-top: 3px;
+}
